@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>日志查找</title>
+
+  <link rel="stylesheet" href="https://chargeb.cdn.bcebos.com/lib/css/resetcss.css">
+  <link rel="stylesheet" href="https://chargeb.cdn.bcebos.com/lib/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <script src="https://chargeb.cdn.bcebos.com/lib/vue/vue"></script>
+  <script src="https://chargeb.cdn.bcebos.com/lib/vue/axios"></script>
+  <script src="https://chargeb.cdn.bcebos.com/lib/vue/jquery"></script>
+  <script src="https://chargeb.cdn.bcebos.com/lib/js/md5.js"></script>
+  <script src="https://chargeb.cdn.bcebos.com/lib/js/qs.js"></script>
+  <script src="./js/api.js"></script>
+  <script src="https://chargeb.cdn.bcebos.com/lib/js/utils.js"></script>
+
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="wscn-http404-container">
+      <div class="wscn-http404">
+        <div class="pic-404">
+          <img class="pic-404__parent" src="@/assets/404_images/404.png" alt="404">
+          <img class="pic-404__child left" src="@/assets/404_images/404_cloud.png" alt="404">
+          <img class="pic-404__child mid" src="@/assets/404_images/404_cloud.png" alt="404">
+          <img class="pic-404__child right" src="@/assets/404_images/404_cloud.png" alt="404">
+        </div>
+        <div class="bullshit">
+          <div class="bullshit__oops">错误!</div>
+          <!-- <div class="bullshit__info">All rights reserved
+                  <a style="color:#20a0ff" href="https://wallstreetcn.com" target="_blank">wallstreetcn</a>
+                </div> -->
+          <div class="bullshit__headline">{{ message }}</div>
+          <div class="bullshit__info">请检查您输入的网址是否正确，请点击以下按钮返回主页或者重新登录</div>
+          <a href="" class="bullshit__return-home">返回首页</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+
+    var app = new Vue({
+      el: '#app',
+      data: function () {
+        return {
+
+        }
+      },
+      created: function () {
+      },
+      computed: {
+        message() {
+          return '网管说这个页面你不能进......'
+        }
+      },
+      methods: {
+        load: function () {
+
+        },
+
+        onClose() {
+        }
+      },
+      watch: {
+
+      },
+    })
+  </script>
+</body>
+
+</html>
